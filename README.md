@@ -10,4 +10,6 @@ The video is present in the documents directory and plays without problems.
 Also, when saving the video from the File's App, it saves in the photo library without problems.
 
 The code is minimal (as requested) but it mimics exactly what the real app tries to do (assembling CIImages into video). Maybe there are inefficiencies in this code and every feedback is appreciated. However, please focus on the main problem: 
-the PHPhotoLibrary.shared().performChanges fails throwing an error (the operation couldn’t be completed. (PHPhotosErrorDomain error 3300.)). This error is not due to access permissions to the photo library. The app askes for permission and has the necessary string in the Info.plists.  
+the PHPhotoLibrary.shared().performChanges fails throwing an error (the operation couldn’t be completed. (PHPhotosErrorDomain error 3300.)). This error is not due to access permissions to the photo library. The app askes for permission and has the necessary string in the Info.plists.
+
+The problem is present when testing the app on both a real device (iPhone 14 Pro, iOS 17.2) and the simulator. The error code is the same.
