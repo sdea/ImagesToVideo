@@ -1,9 +1,9 @@
 # ImagesToVideo
 
-This repository contains a test project for the TSI Case-ID: 5194461. 
+This repository contains a test project for the DTS Case-ID: 5194461. 
 
-The test app has a simple UI and produces a video from a sequence of CIImages (always the same CIImage for every frame). The video writing is triggered using a simple UIButton.
-Every frame is added to the video in a foor loop. 90 frames are added, 30 fps to produce a video of 3 seconds. 
+The test app has a simple UI and produces a video from a sequence of CIImages (always the same, plain red CIImage for every frame). The video writing is triggered using a simple UIButton.
+Every frame is added to the video in a foor loop. 90 frames are added, with 30 fps to produce a video of 3 seconds. 
 
 The app saves the video in the documents directory but fails to save it in the photo library, throwing an error. The error.localizedDescription is displayed in an alert view.
 The video is present in the documents directory and plays without problems. 
